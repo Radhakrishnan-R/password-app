@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #250057;
+}
+
+.container{
+    max-width: 90%;
+    width: 500px;
+    margin: 200px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container input{
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+.container i{
+    font-size: 1.2rem;
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/b7224fcd49.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <input type="password" placeholder="password">
+        <i class="fa-solid fa-lock" ></i>
+    </div>
+
+    <script type="text/javascript">
+        const input = document.querySelector("input");
+        const lock = document.querySelector("i");
+
+        lock.onclick = () => {
+
+            if(lock.classList.contains("fa-lock")){
+
+                input.type = "text";
+                lock.classList.remove("fa-lock");
+                lock.classList.add("fa-unlock");
+            }else{
+
+                console.log("a");
+                lock.classList.remove("fa-unlock");
+                lock.classList.add("fa-lock");
+                
+                input.type = "password";
+                
+                
+            }
+        }
+    </script>
+</body>
+</html>
